@@ -1,0 +1,117 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+.container {
+  position: relative;
+  background-color: peachpuff;
+  width: 100%;
+  height: 100%;
+}
+.container .mask {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.container .mask .tips {
+  position: absolute;
+  top: 50%;
+  margin-top: 30px;
+  text-align: center;
+  color: red;
+}
+.container .chatwindow {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 600px;
+  background-color: aliceblue;
+}
+.container .chatwindow .top {
+  text-align: center;
+}
+.container .chatwindow .top .onLineNum {
+  font-size: 12px;
+  color: rosybrown;
+}
+.container .chatwindow .bottom {
+  position: absolute;
+  bottom: 0;
+}
+.container .chatwindow .bottom .sendContent {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.container .chatwindow .bottom .alertBox {
+  position: absolute;
+  top: -20px;
+  display: none;
+  color: firebrick;
+}
+.container .chatwindow .bottom .iconBox {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.container .chatwindow .bottom .emoji {
+  display: none;
+  width: 100%;
+  height: 200px;
+  background-color: cadetblue;
+  overflow-y: auto;
+  margin-bottom: 0;
+}
+.container .chatwindow .bottom .emoji li {
+  float: left;
+}
+.container .chatwindow .bottom .emoji .liImg {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin: 0 10px 10px 0;
+}
+.container .chatwindow .middle ul li {
+  width: 500px;
+  margin-bottom: 5px;
+  list-style: none;
+}
+.container .chatwindow .middle ul li .liNameL {
+  width: 300px;
+  margin: 0;
+}
+.container .chatwindow .middle ul li .liCont {
+  padding-left: 10px;
+  width: 300px;
+  margin: 0;
+}
+.container .chatwindow .middle ul li .liImg {
+  width: 100px;
+}
+.container .chatwindow .middle ul li.liR {
+  padding-left: 200px;
+  text-align: right;
+}
+.container .chatwindow .middle ul li.liR .liContR {
+  padding-right: 10px;
+  width: 300px;
+  margin: 0;
+}
+.container .chatwindow .middle ul li.announce {
+  text-align: center;
+  color: #ccc;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./css/mycss.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="mask">
+				<div class="input-group">
+					<input type="text" class="form-control userName" placeholder="请输入用户名" aria-describedby="basic-addon2">
+					<span class="input-group-addon" id="login">进入</span>
+				</div>
+				<div class="tips" style="display: none;">用户名已存在啦</div>
+			</div>
+			<div class="chatwindow" style="display: none;">
+				<div class="top">当前在线人数:<span class="onLineNum"></span></div>
+				<div class="bottom">
+					<div class="input-group">
+						<input type="text" class="form-control sendContent">
+						<span class="input-group-btn">
+							<button class="btn btn-info send" type="button">发送</button>
+						</span>
+					</div>
+					<div class="iconBox">
+						<span class="glyphicon glyphicon-picture uploadPic"></span>
+						<span class="glyphicon glyphicon-heart-empty xinxin"></span>
+						<input type="file" name="" id="upload" accept="image/*" style="display: none;">
+					</div>
+					<div>
+						<ul class="emoji">
+						</ul>
+					</div>
+					<div class="alertBox">发送内容不能为空</div>
+				</div>
+				<div class="middle">
+					<ul class="ul">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/socket.io.js"></script>
+	<script src="js/index.js"></script>
+
+</html>
